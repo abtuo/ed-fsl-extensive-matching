@@ -96,7 +96,7 @@ class Proto(framework.FewShotREModel):
         _, self.pred = torch.max(self.logits.view(-1, self.logits.shape[-1]), 1)
 
 
-class ProtoHATT(Proto):
+class Mushroom(Proto):
 
     def __init__(self, args):
         framework.FewShotREModel.__init__(self, args)
